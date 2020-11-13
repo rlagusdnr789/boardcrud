@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gdu.test.oraclecrud.mapper.BoardMapper">
+  <select id="selectBoardList" resultType="gdu.test.oraclecrud.vo.Board">
+  	select 
+  		board_id as boardId, 
+  		board_title as boardTitle, 
+  		board_writer as boardWriter
+  	from board
+  </select>
+</mapper>
