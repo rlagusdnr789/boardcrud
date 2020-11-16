@@ -14,6 +14,7 @@
 				<th>번호</th>
 				<th>제목</th>
 				<th>작성자</th>
+				<th>상세보기</th>
 			</tr>
 		</thead>
 		<c:forEach var="b" items="${board}">
@@ -21,6 +22,7 @@
 				<td>${b.boardId}</td>
 				<td>${b.boardTitle}</td>
 				<td>${b.boardWriter}</td>
+				<td><a href="boardOne/${b.boardId}">보기</a>
 			</tr>
 		</c:forEach>
 	</table>

@@ -15,13 +15,14 @@ public class BoardService {
 		@Autowired private BoardMapper boardMapper;
 		
 		public List<Board> getBoardList(){
-	
 			List<Board> boardList= boardMapper.selectBoardList();
-			
-		
 			return boardList;
 		}
-
+		public Board getBoardOne(int boardId) {
+			Board boardOne = BoardMapper.selectBoardOne(boardId);
+			
+			return boardOne;
+		}
 		
 
 }

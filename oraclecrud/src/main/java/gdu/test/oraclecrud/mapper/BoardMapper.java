@@ -9,6 +9,15 @@ import gdu.test.oraclecrud.vo.Board;
 @Mapper
 public interface BoardMapper {
 	List<Board> selectBoardList();
+	Board selectBoard(int boardid);
 	
+	 static Board selectBoardOne(int boardId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
 	
 }
